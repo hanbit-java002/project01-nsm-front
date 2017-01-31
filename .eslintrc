@@ -24,6 +24,7 @@
 			"tabWidth": 4,
 			"ignoreUrls": true,
 			"ignorePattern": /^goog\.(module|require)/
-		}]
+		}],
+		"linebreak-style": "off"
 	}
 }
