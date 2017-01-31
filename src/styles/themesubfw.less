@@ -1,0 +1,100 @@
+@import 'lib/include.all.less';
+@import 'common.less';
+
+.section1 .main {
+	width: 100%;
+}
+
+.section1 {
+	overflow-x: hidden;
+}
+
+.region_box {
+	width: 100%;
+	display: flex;
+	margin-top: 120px;
+	justify-content: center;
+}
+
+.region_box>ul>li {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 1.3em;
+	background-color: white;
+	line-height: 48px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #777;
+	cursor: pointer;
+}
+
+.region_box>ul>li:last-child {
+	margin-right: 0;
+}
+
+.pension_sub {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.pension_sub>ul {
+	width: 100%;
+	margin-left: 45px;
+	justify-content: space-between;
+}
+
+.pension_sub>ul>li {
+	display: inline-block;
+	position: relative;
+	width: 23%;
+	margin: 5px;
+}
+
+.pension_img {
+	width: 100%;
+}
+
+.box_cover {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.txt_box {
+	position: absolute;
+	bottom: 7%;
+	left: 5%;
+	color: white;
+	cursor: pointer;
+}
+
+.txt_box p {
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+.txt_box p:first-child {
+	font-size: 1.6em;
+}
+
+.box_hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+	align-items: center;
+	cursor: pointer;
+}
+
+.hover_txt {
+	font-size: 1.2em;
+	color: white;
+	margin: -130px 0 0 15px;
+}

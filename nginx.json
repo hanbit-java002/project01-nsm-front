@@ -1,0 +1,35 @@
+{
+	"server_name": [
+		"pensionpick.co.kr www.pensionpick.co.kr"
+	],
+	"listen": 80,
+	"statics": [
+		{
+			"location": "/",
+			"root": "/apps/pensionweb/dist"
+		}
+	],
+	"proxys": [
+		{
+			"location": "/api/",
+			"backends_name": "backend",
+			"backends": [
+				{
+					"address": "127.0.0.1",
+					"port": 8280
+				}
+			]
+		}
+	],
+	"globals": {
+		"trust_proxy": true
+	},
+	"logs": {
+		"access": {
+			"path": "logs/pensionweb.log"
+		},
+		"error": {
+			"path": "logs/pensionweb.log"
+		}
+	}
+}

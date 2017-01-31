@@ -1,0 +1,149 @@
+@import 'lib/include.all.less';
+@import 'common.less';
+
+.section {
+	overflow: auto;
+	margin-bottom: 0;
+}
+
+.section1 {
+	width: 100%;
+}
+
+.map_box {
+	height: 800px;
+	width: 100%;
+	background-color: #ddd;
+	margin-top: 100px;
+	border-bottom: solid 1px #999;
+	border-top: solid 1px #999;
+}
+
+.list_section {
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.map_menu, .map_area {
+	width: 100%;
+	height: 50px;
+	border-bottom: solid 1px #ddd;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+ }
+
+.map_menu>ul>li, .map_area>ul>li {
+	display: inline-block;
+	font-size: 1.1em;
+	color: white;
+	padding: 35px 25px 25px 25px;
+}
+
+.region_label, .region_label2 {
+	width: 95px;
+	height: 35px;
+	color: #000;
+	border-radius: 5px;
+}
+
+.list_box {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.list_box>ul>li {
+	width: 100%;
+	height: 70px;
+	border-bottom: solid 1px #ddd;
+	cursor: pointer;
+}
+
+.list_box>ul>li>img {
+	padding: 10px;
+}
+
+.list {
+	padding: 10px;
+}
+
+.list>p {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+.map {
+	position: relative;
+}
+
+.map_popup {
+	position: absolute;
+	width: 300px;
+	height: 430px;
+	left: 910px;
+	top: 260px;
+	display: none;
+	z-index: 9999;
+	overflow: auto;
+	background-image: url("http://pensionpick.co.kr/img/popup.png");
+}
+
+.map_popup>img {
+	width: 92%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.map_popup .close {
+	margin: 10px;
+	float: right;
+	font-size: 0.8em;
+	color: #666;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.popup_info .popup_title {
+	font-size: 1.1em;
+	margin: 10px 0 10px 10px;
+}
+
+.popup_info>p {
+	font-size: 0.8em;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.popup_btn {
+	width: 80%;
+	height: 28px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.popup_btn>a {
+	padding: 8px 15px;
+	background-color: #2f9cf1;
+	color: white;
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+#map {
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	margin: -1px 0 0 301px;
+}

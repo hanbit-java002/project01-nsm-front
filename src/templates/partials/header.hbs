@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>Pension Pick</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="plugins/normalize/normalize.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/{{cssName}}.css">
+	<script src="plugins/modernizr/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="logo">
+                <a href="/"><img src="/img/logo_pension.png"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="search_area">지역검색</li>
+                    <li class="map-info">
+						<a href="/map.html">지도보기</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	<div class="nav_box" style="max-height: 100px">
+		<form name="sForm" id="sForm" method="post">
+			<input type="hidden" name="itemcd" id="itemcd" value="" />
+			<input type="hidden" name="sort" id="sort" value="" />
+			<div>
+				<div class="box_in box_in1">
+					<p>지역선택</p>
+					<select class="select1 select" name="regionpar" id="regionpar" OnChange="getRegionList(this.value);">
+						<option label="어느 지역으로 가시나요?"></option>
+						<option disabled>----------------------------</option>
+						<option value="1030000">경기(34개)</option>
+						<option disabled>----------------------------</option>
+						<option value="1040000">인천(18개)</option>
+						<option disabled>----------------------------</option>
+						<option value="1050000,1060000">충청(28개)</option>
+						<option disabled>----------------------------</option>
+						<option value="1150000,1160000">전라(43개)</option>
+						<option disabled>----------------------------</option>
+						<option value="1070000,1080000">경상(62개)</option>
+					</select>
+					<select class="select2 select" name="regionno" id="regionno">
+						<option label="구/군을 선택해주세요"></option>
+					</select>
+					<div class="search search1">검색하기</div>
+				</div>
+				<div class="box_in box_in2">
+					<div class="menu_box">
+						<p>객실타입</p>
+						<p class="menu" data-itemcd="FX">풀빌라</p>
+						<p class="menu" data-itemcd="FW">스파&amp;월풀</p>
+						<p class="menu" data-itemcd="FC">독채</p>
+						<p class="menu" data-itemcd="FB">단체</p>
+						<p class="menu" data-itemcd="FK">테라스바비큐</p>
+					</div>
+				</div>
+				<div class="box_in box_in3">
+					<div class="menu_box">
+						<p>편의시설</p>
+						<p class="menu" data-itemcd="FG">수영장</p>
+						<p class="menu" data-itemcd="FH">워터슬라이드</p>
+						<p class="menu" data-itemcd="FF">반려동물</p>
+						<p class="menu" data-itemcd="FJ">노래방</p>
+						<p class="menu" data-itemcd="FN">족구장</p>
+						<p class="menu" data-itemcd="FI">세미나실</p>
+					</div>
+				</div>
+				<div class="box_in box_in4">
+					<div class="menu_box">
+						<p>주변환경</p>
+						<p class="menu" data-itemcd="F2">계곡</p>
+						<p class="menu" data-itemcd="FE">오션뷰</p>
+						<p class="menu" data-itemcd="FQ">ATV</p>
+						<p class="menu" data-itemcd="FV">스키장</p>
+						<p class="menu" data-itemcd="FU">워터파크</p>
+						<p class="menu" data-itemcd="FR">수상레져</p>
+					</div>
+				</div>
+			</div>
+			<div class="search search2">검색하기</div>
+		</form>
+	</div>

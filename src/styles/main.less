@@ -1,0 +1,254 @@
+@import 'lib/include.all.less';
+@import 'common.less';
+
+section {
+	overflow: auto;
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.section1 {
+	width: 100%;
+	min-height: 650px;
+	margin-bottom: 50px;
+}
+
+.section1 .video_box {
+	min-width: 100%;
+	min-height: 750px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 3px 5px #000;
+}
+
+.section1 .video_box>video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	bottom: -30%;
+}
+
+.video_box>p {
+	position: absolute;
+	color: white;
+	font-size: 3.5em;
+	top: 40%;
+	left: 50%;
+	z-index: 10;
+	text-align: center;
+	line-height: 90px;
+	width: 500px;
+	margin-left: -250px;
+}
+
+.pattern {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 6;
+	opacity: 0.2;
+}
+
+.video_color {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	opacity: 0.3;
+}
+
+.section2 {
+	width: 100%;
+}
+
+.section3 {
+	width: 100%;
+}
+
+.section4 {
+	width: 100%;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	color: #58595b;
+}
+
+.title p:first-child {
+	font-size: 1.8em;
+}
+
+.title p:nth-child(2) {
+	font-size: 1.2em;
+	width: 100%;
+	padding: 15px 0 15px 0;
+}
+
+.title .line {
+	width: 100px;
+	height: 3px;
+	background-color: #fee600;
+	margin: 0 auto;
+}
+
+.section_sub {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.section_sub .box {
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.section_sub .box .box_in {
+	height: auto;
+	position: relative;
+}
+
+.section_sub .box1 .box_in {
+	width: 24.5%;
+}
+
+.section_sub .box1 .box_in img {
+	width: 100%;
+}
+
+.section_sub .box .box_in .box_cover {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+.section_sub .box .box_in .txt_box {
+	position: absolute;
+	bottom: 7%;
+	left: 5%;
+}
+
+.section_sub .box .box_in .txt_box p {
+	color: white;
+}
+
+.section_sub .box .box_in .txt_box p:first-child {
+	font-size: 1.6em;
+}
+
+.section_sub .box .box_in .txt_box p:last-child {
+	font-size: 1em;
+}
+
+.section_sub .box .box_in .box_hover {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	align-items: center;
+}
+
+.section_sub .box .box_in .box_hover p {
+	color: white;
+}
+
+.section_sub .box .box_in .box_hover .hover_txt {
+	margin: 5% 0 0 5%;
+	line-height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.section_sub .box .box_in .box_hover .circle_box {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.section_sub .box .box_in .box_hover .circle_box .circle {
+	width: 75px;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	border-radius: 100px;
+	border: 5px solid rgba(254,230,0,0.5);
+}
+
+.section_sub .box .box_in .box_hover .circle_box .circle p {
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section_sub .box .box_in .box_hover .circle_box .circle p span {
+	font-size: 1.2em;
+}
+
+.section_sub .box {
+	margin-top: 12px;
+}
+
+.section_sub .box2 .box_in {
+	width: 32.9%;
+}
+
+.section_sub .box .box_in img {
+	width: 100%;
+}
+
+.section3 .section_sub .box .box_in .box_hover3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+}
+
+.section3 .section_sub .box .box_in .box_hover3:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.section3 .section_sub .box .box_in .box_hover3 .hover_txt3 {
+	width: 100%;
+}
+
+.section3 .section_sub .box .box_in .box_hover3 .hover_txt3 .hot_icon {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.section3 .section_sub .box .box_in1 .box_hover3 .hover_txt3 .hot_icon {
+	width: 180px;
+}
+
+.section3 .section_sub .box .box_in2 .box_hover3 .hover_txt3 .hot_icon {
+	width: 180px;
+}
+
+.section3 .section_sub .box .box_in3 .box_hover3 .hover_txt3 .hot_icon {
+	width: 180px;
+}
+
+.section3 .section_sub .box .box_in4 .box_hover3 .hover_txt3 .hot_icon {
+	width: 180px;
+}
+
+.section3 .section_sub .box .box_in .box_hover3 .hover_txt3 p {
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
