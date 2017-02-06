@@ -12,6 +12,8 @@ require([
 		SMALL_INFO_WIDTH: "400px",
 	};
 
+	var infowindow;
+
 	function getBestZoom(minLat, maxLat, minLng,
 		maxLng, mapWidth, mapHeight, maxZoom) {
 		var radius = 6371; // radius of the earth in km
@@ -65,8 +67,7 @@ require([
 			zoom: 10,
 		});
 
-		var contentString = "<div class=\"map_popup\" data-name=\"가평아이리스\">" +
-			"<p class=\"close\">창닫기</p>" +
+		var contentString = "<div class=\"abc\" data-name=\"가평아이리스\">" +
 			"<img src=\"/img/189499_m.jpg\" align=\"center\">" +
 			"<div class=\"popup_info\">" +
 			"<p class=\"popup_title\">가평아이리스</p>" +
@@ -80,7 +81,7 @@ require([
 			"</div>" +
 			"</div>";
 
-		var infowindow = new google.maps.InfoWindow({
+		infowindow = new google.maps.InfoWindow({
 			content: contentString,
 		});
 
@@ -103,7 +104,7 @@ require([
 			console.log(marker);
 		}
 
-		marker.addListener("click", function() {
+		marker.addListener("click", function(event) {
 			infowindow.open(mapInfo.map, marker);
 		});
 
